@@ -1,27 +1,23 @@
-# Die verfluchten Märchen von Gschwend – Horror-Update
+# Die verfluchten Märchen von Gschwend – Cinematic Edition
 
-GitHub Pages: **Den gesamten Inhalt dieses Ordners direkt in das Stammverzeichnis des bestehenden Repositories hochladen.** Die vorhandenen QR-Codes und deren Freischaltschlüssel bleiben unverändert.
+GitHub-Pages-Web-App mit sieben QR-geschützten Stationen, sieben unterschiedlichen Klangkulissen, filmisch animierten Schreckszenen und einer inszenierten Schlusssequenz.
 
-## Neu
-- Sieben **unterschiedliche**, eigens synthetisierte, beklemmende Loop-Klangkulissen (Badsee, Hexenhaus, Schneiderin, Friedhof, Waldhüter, Kreuzstein, Finale).
-- Sound-Testschaltflächen und Diagnosetestplayer aus der Oberfläche entfernt.
-- Hexenlachen tiefer, mit mehr Hall und Echo aus dem bisherigen Audio bearbeitet (kein neues eingesprochenes Lachen).
-- Animierte Siegerurkunde nach erfolgreichem Finale; Rücksicht auf `prefers-reduced-motion`.
-- Einzelnes Rätsel zurücksetzen: behält QR-Freischaltung, entfernt das zugehörige Siegel; bei Rücksetzen einer Voraussetzung wird das Finale wieder gesperrt.
-- Gesamten Fortschritt löschen: löscht auch QR-Freischaltungen; alle Codes müssen neu gescannt werden. Zwei Sicherheitsabfragen.
+## Installation
 
-## Beibehalten
-Sieben Stationen, Badsee-Start, Lösungswort ERLÖSUNG, Rätselantworten, QR-SHA256-Prüfung, lokale Speicherung, Mobilbrowser-Audio-Fallback, Vorlesefunktion, Erfolgs-/Fehleranimationen und vorhandene übrige Audiodateien.
+Alle Dateien und Ordner aus diesem Paket in das Stammverzeichnis des Repositories `marcuss-bit/maerchenwald-gschwend` hochladen. GitHub Pages muss auf den Hauptordner des gewählten Branches zeigen. Die bestehenden QR-Schilder müssen nicht ersetzt werden; die QR-Prüfsummen wurden unverändert übernommen.
 
-## Hinweis
-Mobilbrowser können automatischen Ton beim QR-Scan blockieren. Der sichtbare Knopf **Stationsklänge starten** ist deshalb bewusst erhalten – er ist kein Sound-Testknopf. Bitte die sieben Stationen und den finalen Ablauf auf echten Android- und iPhone-Geräten testen.
+## Inszenierung
 
+- An jeder Station gibt es eine eigene mehrschichtige Schreckszene: Stationsmotiv, Kamerafahrt, Nebel, Licht, animierte Figur und Text. Die Szenen werden bei falscher Antwort ausgelöst, sofern aktiviert.
+- Schreckstufen: Aus, Sanft, Gruselig (Standard), Extrem. Keine Stroboskope und keine extremen Lautstärkespitzen.
+- Nach dem letzten Rätsel folgt eine eigenständige Schlusssequenz mit animiertem Buch, einzeln erscheinenden Siegeln und Übergang zur Siegerurkunde.
+- Keine Schreckeffekt- oder Audio-Testschaltflächen in der Besucheransicht. Die Schaltfläche zum Starten der Stationsklänge ist für die mobilen Browser-Autoplay-Regeln notwendig.
+- Bestehende Rücksetzfunktionen und die Rätselantworten bleiben erhalten.
 
-## Schreckeffekte (Update)
+## Wichtige Einschränkungen
 
-Die Web-App bietet jetzt vier Schreckstufen: Aus, Sanft, Gruselig (Standard) und Extrem.
-Jede Station zeigt bei falscher Antwort einen eigenen visuellen Effekt. In der Stufe Sanft
-wird kein Hexenlachen abgespielt; bei Aus sind die zusätzlichen Schreckeffekte deaktiviert.
-Die Einstellung wird lokal im Browser gespeichert und kann jederzeit geändert werden.
-Die Lautstärke des Hexenlachens ist begrenzt; es gibt keine Stroboskopeffekte.
-Alle QR-Schlüssel, Antworten, Speicherstände und vorhandenen Audiodateien bleiben unverändert.
+Die Schreckfiguren sind handgezeichnete SVG-Motive, die mit den vorhandenen Stationsbildern filmisch komponiert und animiert werden. Es sind **keine** fotorealistischen 3D-Figuren oder gerenderten Videoclips. Die neuen Kapitel werden über die Browser-Sprachausgabe vorgelesen; neu eingesprochene Kapitel-MP3s sind nicht enthalten.
+
+QR-Schlüssel sind nicht im Paket enthalten. Ein geteilter QR-Link kann weitergegeben werden; er beweist keine physische Anwesenheit. Spielfortschritt wird lokal im Browser gespeichert. Audio kann auf iOS und Android erst nach einer Nutzerinteraktion starten.
+
+Vor dem öffentlichen Einsatz alle sieben QR-Scans, Ton und Rücksetzfunktionen auf echten Smartphones testen. Die Schreckstufen für Familien gegebenenfalls vorab besprechen. Bei eingeschalteter Bewegungsreduzierung werden Animationen stark reduziert.
