@@ -1,50 +1,21 @@
-# Die verfluchten Märchen von Gschwend – 7 Stationen
+# Die verfluchten Märchen von Gschwend – ERLÖSUNG
 
 ## Installation auf GitHub Pages
+1. Den **Inhalt** dieses ZIP-Archivs (nicht den übergeordneten Ordner) ins Stammverzeichnis des GitHub-Repositories `marcuss-bit/maerchenwald-gschwend` laden.
+2. In GitHub unter **Settings → Pages** die Veröffentlichung aus **main / root** aktivieren bzw. beibehalten.
+3. App öffnen: https://marcuss-bit.github.io/maerchenwald-gschwend/
+4. Die vorhandenen sieben Stations-QR-Codes nacheinander testen. Die Freischaltlinks und Stations-Slugs sind unverändert.
 
-1. **Den gesamten Inhalt** dieses Ordners in die Wurzel des GitHub-Repositories `marcuss-bit/maerchenwald-gschwend` hochladen: `index.html`, `bilder/`, `audio/`. Bei GitHub ggf. Dateien per Drag-and-drop einschließlich Ordnern hinzufügen.
-2. GitHub Pages auf `main` / `(root)` einstellen.
-3. Nach dem Deployment https://marcuss-bit.github.io/maerchenwald-gschwend/ öffnen und Ton testen.
-4. Im Smartphone-Browser zuerst „Ton testen“, dann „Atmosphäre starten“ und „Geschichte anhören“ antippen. Automatischer Ton ohne Nutzeraktion ist auf Smartphones eingeschränkt.
-
-## QR-Links
-
-Die alten sechs Fragment-Links bleiben erhalten; zwei alte Stationen wurden inhaltlich ersetzt.
-
-- `#start` – Rotkäppchen
-- `#hexenhaus` – Hänsel und Gretel
-- `#dornroeschen` – Die Schatten-Schneiderin (alter Link bleibt erhalten)
-- `#laternen` – Mumpfs Friedhof (alter Link bleibt erhalten)
-- `#waldhueter` – Silvans Versprechen
-- **`#kreuzstein` – Kreuzstein (NEU: eigenes QR-Schild erstellen)**
-- `#finale` – Die dreizehnte Seite
-
-## Klang und Erzählung
-
-- Sieben unterschiedliche MP3-Hintergrundklänge: `audio/atmosphaere-1.mp3` bis `audio/atmosphaere-7.mp3`
-- Sieben synthetisch gesprochene Kapitel: `audio/kapitel-1.mp3` bis `audio/kapitel-7.mp3`
-- Pro Station zwei Antwortsignale: `audio/richtig-N.mp3`, `audio/falsch-N.mp3`
-- Separater Testton und gesprochenes Finale
-- Beim Wechsel der Station wechselt die Klangdatei. Die Lautstärke der Atmosphäre wird beim Vorlesen reduziert.
-
-Die Geräusche sind **synthetisch gestaltete Klangkulissen**, keine professionell aufgenommenen Foley-Effekte. Die Sprecherstimme wurde lokal mit eSpeak synthetisch erzeugt. Keine Internetdienste zur Laufzeit nötig; die Dateien werden von GitHub Pages geladen.
-
-## Rätsel
-
-1. C → L
-2. KNOCHEN → I
-3. RABE → C
-4. MUMPF → H
-5. VERSPRECHEN → T
-6. MITGEFÜHL / GÜTE / TEILEN → Bonusprüfung
-7. LICHT → Finale (nur nach den fünf Siegeln und der Kreuzstein-Prüfung)
-
-Die Fortschritte werden im Browser lokal gespeichert.
+## Inhalt
+- `index.html`: komplette App mit sieben Rätseln, Animationen, Siegeln und großem Finale
+- `bilder/`: sieben stationsbezogene Illustrationen, Station 1 am Badsee
+- `audio/`: atmosphärische Musik, Hexenlachen, Erfolgsklänge und weitere Effekte
+- `.nojekyll`: GitHub-Pages-Kompatibilität
 
 ## Wichtige Hinweise
-
-- **Kreuzstein-Sage:** Die App kennzeichnet die Darstellung als örtliche Überlieferung; Einzelheiten sind vor öffentlicher Nutzung mit verlässlichen lokalen Quellen abzugleichen. Die Geisterhandlung ist frei erfunden.
-- Das neue Bild des Kreuzsteins ist eine **künstlerische Illustration**, kein Foto des tatsächlichen Denkmals.
-- Der neue QR-Code-Standort und eine eventuelle Beschilderung erfordern Abstimmung und ggf. Genehmigung.
-- Der Veranstalter-/Impressumsbereich wurde auf Wunsch nicht eingebaut; rechtliche Pflichten sind vor einer öffentlichen Bereitstellung gesondert zu prüfen.
-- MP3-Dateien und JavaScript wurden automatisiert geprüft. Ein echter Ton- und Bedienungstest auf Android und iPhone ist für diese Version weiterhin erforderlich.
+- Die **neuen** Geschichten werden über die Geräte-Sprachausgabe vorgelesen (Schaltfläche „Geschichte vorlesen“). Neue, professionell eingesprochene Kapitel-MP3s sind **nicht** enthalten. Die veralteten Erzähl-MP3s wurden bewusst entfernt.
+- Automatischer Tonstart kann auf Mobilgeräten blockiert werden. Gegebenenfalls „Stationsklänge starten“ antippen.
+- QR-Freischaltcodes sind im HTML hinterlegt, weil die App vollständig statisch ist. Ein QR-Link kann geteilt werden; ein Scan beweist keinen tatsächlichen Aufenthalt.
+- Die Kreuzstein-Erzählung ist als frei gestaltete Geschichte gekennzeichnet.
+- Vor dem Einsatz alle QR-Codes und die Tonwiedergabe auf echten Android- und iPhone-Geräten testen.
+- Die Druckschilder werden **nicht** ins GitHub-Repository hochgeladen.
